@@ -8,7 +8,12 @@
 $var = 0;
 // TODO votre code ici.
 
-
+if (empty($var)){
+    echo "vide car vaut 0";
+}
+else{
+    echo "pas vide";
+}
 
 
 /**
@@ -16,12 +21,14 @@ $var = 0;
  */
 $eraseMe = "Please erase me !";
 // TODO votre code ici.
-
-
+unset($eraseMe);
+echo "<br><br>";
 /**
  * 3. Déclarez vous même un tableau et utilisez var_dump pour afficher toutes les informations de debug.
  */
 // TODO votre code ici.
+$array = array("pomme", "poire", "banane");
+var_dump($array);
 
 echo "<br>";
 
@@ -30,6 +37,7 @@ echo "<br>";
  */
 // TODO votre code ici.
 
+print_r($array);
 echo "<br>";
 
 
@@ -38,7 +46,14 @@ echo "<br>";
  *    Si c'est le cas, affichez le message 'Existe', si ce n'est pas le cas, affichez le message 'Existe pas'.
  */
 $tab = ["test" => true, "name" => "Doe", "age" => 32];
+$doNotExists = "doNotExists";
 // TODO Votre code ici.
+if(isset($doNotExists, $tab) === true){
+    echo "Existe";
+}
+else{
+    echo "Existe pas";
+}
 
 
 /**
