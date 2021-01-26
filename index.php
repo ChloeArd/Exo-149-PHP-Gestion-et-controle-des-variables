@@ -78,3 +78,29 @@ else{
  */
 
 // TODO votre code ici.
+
+$booleen = true;
+$nbrEntier = 25;
+$nbrFloat = 36.245;
+$string = "Carotte";
+
+function maFunct ($monparam){
+    if (is_bool($monparam)){
+        echo "Ma variable est de type : booléen";
+    }
+    elseif (is_int($monparam)){
+        echo "Ma varaible est de type : nombre à entier";
+    }
+    elseif (is_float($monparam)){
+        echo "Ma variable est de type : nombre à virgule";
+    }
+    elseif (is_string($monparam)){
+        echo "Ma varaible est de type : chaine de caractère";
+    }
+    echo "<br>";
+}
+
+maFunct($booleen);
+maFunct($nbrEntier);
+maFunct($nbrFloat);
+maFunct($string);
